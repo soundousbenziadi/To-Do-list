@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  
+    min-height: 100vh;
+    background: linear-gradient(185deg, #F7B5CA, #F0A8D0);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: #B51B75;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 50px;
+}
+.todo-app{
+    max-width: 545px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.todo-app:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.todo-app h2{
+    color: #f95fb4;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.todo-app h2 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3d5e9;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #F875AA;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #B51B75;
+}
+ul li{
+    list-style: none;
+    position: relative;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/check.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 16px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+} 
+ul li.checked::before{
+ color: #666;
+ background-image: url(images/checked.png);
+}
