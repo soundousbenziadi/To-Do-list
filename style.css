@@ -132,3 +132,15 @@ ul li span:hover{
 a{
     text-decoration: none;
 }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+    ul li {
+        font-size: 15px;
+    }
+}
