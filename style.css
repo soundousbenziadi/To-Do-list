@@ -63,12 +63,14 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 30px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     background-color: #F875AA;
     border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 button:hover{
     background-color: #B51B75;
